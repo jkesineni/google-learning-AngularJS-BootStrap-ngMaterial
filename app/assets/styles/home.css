@@ -1,0 +1,41 @@
+﻿#home-header-menu-button i {
+    color:rgba(0,165,142,1);
+    margin-top:8px;
+    font-size:25px;
+}
+
+.home-body-services {
+    padding:0px;
+    margin-bottom:10px;
+    position:relative;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background:rgba(255,255,255,0.6) !important;
+}
+.home-header-contnet {
+    position:fixed;
+    right:20px;
+    top:20px;
+    z-index:1000;
+}
+
+.home-header-slide-menu {
+    overflow-y:hidden;
+    background:rgba(255,255,255,0.5);
+    margin-top:0px;
+}
+
+.home-footer-outer-div {
+    position:relative;
+    margin-top:10px;
+    background:rgba(255,255,255,0.6);
+    margin:0px;
+    padding:0px;
+}
+
+.home-footer-copyright-span {
+    color:rgb(128, 128, 128);
+    font-size:1.5rem;
+} 

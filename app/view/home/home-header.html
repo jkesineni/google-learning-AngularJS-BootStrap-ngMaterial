@@ -1,0 +1,55 @@
+﻿<div class="container">
+    <header>
+        <h1>
+            <a name="angularjs-pageslide-directive" class="anchor" href="#angularjs-pageslide-directive"></a>
+        </h1>
+    </header>
+    <div ng-controller="HomeHeaderContoller as vm" class="home-header-contnet">
+        <div id="home-header-menu-button" class="menuIconcircle animated zoomIn"  ng-click="vm.toggle()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div pageslide ps-open="vm.appContextVM.globalMenuState" ng-model-options="{getterSetter:true}"  
+             class="home-header-slide-menu">           
+                <a ng-click="vm.toggle()" class="button slide-menu-close"><img src="app/assets/img/red_cross.png" 
+                                                                               style="width:36px;height:36px;" /></i></a>
+                <hr />
+                <ul class="menu-group"
+                    style="letter-spacing:2px;position:relative;top:10px;z-index:1009;padding-bottom:50px;">
+                    <li ng-click="vm.go2Navigate('home')"  class="menu-list-item">
+                        <h3 ><i class="fa fa-home"><span>Home</span> </i></h3>                           
+                    </li>
+                    <li ng-click="vm.go2Navigate('about')" class="menu-list-item">
+                        <h3><i class="fa fa-exclamation-circle "><span>About</span> </i></h3>    
+                    </li>
+                    <li ng-click="vm.go2Navigate('ContactUs')" class="menu-list-item">
+                            <h3><i class="fa fa-phone-square "><span>Contact Us</span> </i></h3>    
+                    </li>
+                                      
+                    <li ng-show="loginStatus" ng-click="vm.go2Navigate('FeedBack')" class="menu-list-item">
+                            <h3><i class="fa fa-pencil-square "><span>Feedback</span></i></h3> 
+                    </li>
+                    <li ng-click="vm.go2Navigate('TermsOfUse')" class="menu-list-item">
+                            <h3><i class="fa fa-file-text "><span>Terms Of Use</span></i></h3> 
+                    </li>
+                    <li ng-click="vm.go2Navigate('PrivacyPolicy')" class="menu-list-item">
+                            <h3><i class="fa fa-file-text"><span>Privacy Policy</span></i></h3> 
+                    </li>
+                        
+                    <li ng-hide="loginStatus" ng-click="vm.go2Navigate('signin')" class="menu-list-item">
+                            <h3><i class="fa fa-sign-in "><span>Sign In </span></i></h3> 
+                    </li>
+                    <li ng-show="vm.loginStatus" ng-click="vm.go2Navigate('SignOut')" class="menu-list-item">
+                            <h3><i class="fa fa-sign-out "><span>Sign Out</span></i></h3> 
+                    </li>
+                    <li ng-hide="loginStatus" ng-click="vm.go2Navigate('SignUp')" class="menu-list-item">
+                            <h3><i class="fa fa-user-plus "><span>Sign Up</span></i></h3> 
+                    </li>
+                      
+                </ul>
+
+          </div>
+               
+      </div>
+</div>
+
+

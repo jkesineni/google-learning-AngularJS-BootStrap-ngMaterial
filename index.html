@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+      <title>googlelearning.com</title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <!--Favicon -->
+      <link rel="icon" type="image/png" href="app/assets/img/angular-icon.png" />
+      <link rel="stylesheet" href="dist/bootstrap-3.3.7-dist/css/bootstrap.min.css"  />
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>    
+      <link href="app/assets/styles/animate.min.css" rel="stylesheet" />     
+      <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+      <link href="node_modules/angular-material/angular-material.css" rel="stylesheet" />
+      <link href="app/assets/styles/global.css" rel="stylesheet" />
+      <link href="app/assets/styles/signIn.css" rel="stylesheet" />
+      <link href="app/assets/styles/slidemenu.css" rel="stylesheet" />
+      <link href="app/assets/styles/home.css" rel="stylesheet" />
+      <link href="app/assets/styles/animate.css" rel="stylesheet" />
+      <link href="app/assets/styles/about.css" rel="stylesheet" />
+      <link href="app/assets/styles/custom-Animation.css" rel="stylesheet" />
+
+  </head>
+  <body ng-app="app" class="home-animated parallax ">     
+    <div class="parent" >
+        <div class="child page page-home" ui-view></div>
+    </div>
+                
+    <script src="dist/jquery/jquery.min.js"></script>
+    <script src="dist/jquery/jquery-ui.js"></script>
+    <script src="dist/angular-1.6.1/angular.js"></script>
+  
+    <script src="dist/ui-router-1.0.0-beta.3/angular-ui-router.min.js"></script>            
+    <script src="dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="dist/angular-slider/angular-pageslide-directive.js"></script>
+    <script src="app/assets/js/anim-in-out.js"></script>
+      
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+
+    <script src="app/view/account/account.module.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app/view/shared/vm/appContextVM.js"></script>
+    <script src="app/view/shared/app.config.js"></script>
+    <script src="app/view/shared/app.constant.js"></script>
+
+    <script src="app/view/account/vm/SignInVM.js"></script>
+    <script src="app/view/account/vm/SignUpVM.js"></script>
+
+    <script src="app/view/account/account.service.js"></script>
+    <script src="app/view/account/signin-body.ctrl.js"></script>
+
+    <script src="app/view/home/home.ctrl.js"></script>
+    <script src="app/view/home/home.service.js"></script>
+    <script src="app/view/home/home-header.ctrl.js"></script>
+    <script src="app/view/home/home-body.ctrl.js"></script>
+    <script src="app/view/about/aboutus-body.ctrl.js"></script>
+
+</body>
+</html>

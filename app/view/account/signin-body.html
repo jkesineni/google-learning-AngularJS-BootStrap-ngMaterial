@@ -1,0 +1,39 @@
+﻿<md-card ng-controller="SignInContoller as vm" md-theme-watch=""  class="login-body-outer-div" >
+    <div  class="login-close-button-div" ng-click="vm.go2Home()" >
+        <img src="app/assets/img/red_cross.png"  class="login-close-img" />
+    </div>
+    <div layout="row" layout-align="center center"  class="login-body-content-div">
+        <div class="login">
+            <h2 class="login-page-title" >Sign In</h2>
+            <hr style="border:1px solid rgba(128, 128, 128,0.1);" />
+            <form name="clientLogin" id="clientLogin">
+                <md-input-container>
+                    <md-icon><i class="fa  fa-user animated fadeIn" ></i></md-icon>
+                    <input ng-model="vm.SignInVM.userName" ng-model-options="{gettersSetters:true}"
+                            name="userName" type="text" placeholder="User Name"
+                           style="text-align:left;" ng-required="true">
+                    <div ng-messages="clientLogin.userName.$error">
+                        <div ng-message="required">Your user name is required.</div>
+                    </div>
+                </md-input-container>
+               
+                <md-input-container>          
+                    <md-icon><i class="fa  fa-key animated fadeIn" ></i></md-icon>
+                    <input ng-model="vm.SignInVM.password" ng-model-options="{gettersSetters:true}" name="userPassword" 
+                           type="text" placeholder="Password"
+                           style="text-align:left;" ng-required="true">
+                    <div ng-messages="clientLogin.userPassword.$error">
+                        <div ng-message="required">Your password is required.</div>
+                     </div>
+                 </md-input-container>
+                <md-button class="md-raised login-submit-btn" ng-click="vm.doSignIn()" >Login</md-button>
+            </form>
+            <form>
+                <md-checkbox md-no-ink="" aria-label="Checkbox No Ink" class="md-primary" style="color:rgba(11,165,143,1);" ng-model="data.cb5">
+                    Remember me
+                </md-checkbox>
+                <md-button class="md-button" style="margin-left:40px;color:rgba(11,165,143,1);">Forgot Password</md-button>
+            </form>      
+    </div>
+   </div>
+</md-card>
